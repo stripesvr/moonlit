@@ -1,0 +1,44 @@
+name: Build and Release APK
+on:
+  push:
+    tags:
+      - 'v*' # Triggers on tags like v1.0, v1.1
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      
+      - name: Install Apktool
+        run: |
+          mkdir -p bin
+          curl -L https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -o bin/apktool
+          curl -L https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar -o bin/apktool.jar
+          chmod +x bin/apktool
+          echo "$GITHUB_WORKSPACE/bin" >> $GITHUB_PATH
+
+      - name: Build APK
+        run: apktool b . -o moonlit-unsigned.apk
+
+      - name: Sign APK
+        uses: r0adkll/sign-android-release@v1
+        id: sign_app
+        with:
+          releaseDirectory: .
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{steps.sign_app.outputs.signedReleaseFile}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
