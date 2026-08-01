@@ -1,0 +1,62 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: pgXmsmtciiYEfjNbXH7tECdMaTF6NlTMVyCoPhPeRmE=
+
+Name: META-INF/com/android/build/gradle/app-metadata.properties
+SHA-256-Digest: fc8TDUh0Jw5FDexQZJMEwPVvjIZuK9ACUwqmZBPYjC0=
+
+Name: META-INF/version-control-info.textproto
+SHA-256-Digest: ONN3r6drY2Tlv1Uc9P/sGogaRhAqAEf1I/vxSODfaSg=
+
+Name: classes.dex
+SHA-256-Digest: Di851Tcs9+Zm2iYR6A1rTkKIpPI4JtEp5fSvv838eBs=
+
+Name: res/drawable-nodpi/ic_launcher.png
+SHA-256-Digest: QS6jB7OzI/fKyyMbJ87C6fl29Dqtt/A40pGirKUGd80=
+
+Name: res/drawable/button_outline.xml
+SHA-256-Digest: lLRL/XDc2cogqEpbSN+NjitJ3L99CP7eGFwZcXeVKTA=
+
+Name: res/drawable/button_outline_on.xml
+SHA-256-Digest: GfwbLZFFDnsBVq02th414qiUSi4xZ7HqHsRFS5/MhsY=
+
+Name: res/drawable/ic_diagnostics.xml
+SHA-256-Digest: hftAKU1ZyVaao10qHNqUwcSt4KHj6btVbPy1fJNAj7M=
+
+Name: res/drawable/ic_graphics.xml
+SHA-256-Digest: dyec0aEHzowjEvb50/1/oE0GAfU035qk94WOOuEOGX0=
+
+Name: res/drawable/ic_input_lab.xml
+SHA-256-Digest: Q+by3RFoJD3a2ttU5w9FlSbtqijJou9bYWO5h+7bRRA=
+
+Name: res/drawable/ic_locomotion.xml
+SHA-256-Digest: AosZbcAxYBc1o7/81NvQPHJft06YMVjylYw8NtTZkvw=
+
+Name: res/drawable/ic_movement.xml
+SHA-256-Digest: kZL0boi6P6PHgfVQ+frvGDwd69WTg8FOQOgiRSCY+C4=
+
+Name: res/drawable/ic_settings.xml
+SHA-256-Digest: 4FjyjOD6yntHKKI5QsmxZXJnDDL7Vic2WzevOJdxGsg=
+
+Name: res/drawable/ic_shooting_star.xml
+SHA-256-Digest: EddzGA6RzGd9U6pWIzYizsOwyNpVvGCh+Q9AithsHwo=
+
+Name: res/drawable/ic_stat_delta.xml
+SHA-256-Digest: aKGg8+1nop1gXTqZWqmyyzi4hNa601tMhb3TeaMUgjM=
+
+Name: res/drawable/ic_tracking.xml
+SHA-256-Digest: XNqjQmL1kErFfrMZN+Im8k/0r69PQq2cQUNojmw3lzo=
+
+Name: res/drawable/panel_background.xml
+SHA-256-Digest: fMt7/1dSeLt2o6PMnqaRZaegs49SRmtNP7hPupA9Z0U=
+
+Name: res/layout/activity_main.xml
+SHA-256-Digest: mw9CR/XeoQK54YRvh4zniKjutaLHyytw5QPL7nGivPM=
+
+Name: res/xml/data_extraction_rules.xml
+SHA-256-Digest: c3bnV+VvueR0AvajK5x0iFjEenL39Mmf/gDFz/y7Eu4=
+
+Name: resources.arsc
+SHA-256-Digest: VKxRV355dXsxf+0Z0uCeMmph7V+rV9NJx57Zm2eKIjE=
+

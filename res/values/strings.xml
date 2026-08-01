@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_moonlit">Moonlit uses only verified runtime commands. Unsupported avatar or controller-pose effects are not represented by fake buttons.</string>
+    <string name="airstrike">Airstrike</string>
+    <string name="analyze_traces">Analyze Input Traces</string>
+    <string name="animated_title_off">Animated Title: OFF</string>
+    <string name="animated_title_on">Animated Title: ON</string>
+    <string name="app_name">Moonlit</string>
+    <string name="back">Back</string>
+    <string name="camera_vector">Camera vector: x=%1$.2f y=%2$.2f z=%3$.2f</string>
+    <string name="camera_waiting">Camera vector: waiting</string>
+    <string name="car_note">RT drives forward and LT drives backward along the horizontal camera direction. Controller override remains NONE.</string>
+    <string name="car_off">Car Mode [RT/LT]: OFF</string>
+    <string name="car_on">Car Mode [RT/LT]: ON</string>
+    <string name="car_speed_extreme">Car Speed: EXTREME</string>
+    <string name="car_speed_fast">Car Speed: FAST</string>
+    <string name="car_speed_medium">Car Speed: MEDIUM</string>
+    <string name="car_speed_slow">Car Speed: SLOW</string>
+    <string name="cleanup_all">Reset All Runtime Overrides</string>
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="controller_normal">Movement uses controller override NONE. Guardian turns OFF after connecting and can be restored here.</string>
+    <string name="diagnostics_tab">Diagnostics</string>
+    <string name="fly_rt_off">Fly [RT]: OFF</string>
+    <string name="fly_rt_on">Fly [RT]: ON</string>
+    <string name="fly_speed_extreme">Fly Speed: EXTREME</string>
+    <string name="fly_speed_fast">Fly Speed: FAST</string>
+    <string name="fly_speed_medium">Fly Speed: MEDIUM</string>
+    <string name="fly_speed_slow">Fly Speed: SLOW</string>
+    <string name="foveation_high">Foveation: HIGH</string>
+    <string name="foveation_low">Foveation: LOW</string>
+    <string name="foveation_off">Foveation: OFF</string>
+    <string name="fps_initial">FPS: —</string>
+    <string name="graphics_tab">Graphics</string>
+    <string name="guardian_off">Guardian: OFF</string>
+    <string name="guardian_on">Guardian: ON</string>
+    <string name="input_format">RT: %1$s LT: %2$s</string>
+    <string name="input_lab_tab">Input Lab</string>
+    <string name="input_waiting">Inputs: waiting</string>
+    <string name="locomotion_tab">Locomotion</string>
+    <string name="mapping_format">"Mappings — RT: %1$s
+LT: %2$s
+A: %3$s
+B: %4$s"</string>
+    <string name="max_performance_off">Max CPU/GPU: OFF</string>
+    <string name="max_performance_on">Max CPU/GPU: ON</string>
+    <string name="max_predictions_off">Max Predictions: OFF</string>
+    <string name="max_predictions_on">Max Predictions: ON</string>
+    <string name="movement_tab">Movement</string>
+    <string name="next">Next</string>
+    <string name="not_connected">Not connected</string>
+    <string name="pose_pending">Controller Pose API: PENDING PROBE</string>
+    <string name="probe_connect_first">Probe: connect ADB first</string>
+    <string name="probe_idle">Probe: not run</string>
+    <string name="probe_note">The probe checks for firmware-specific 6DoF pose output and writable controller-pose commands. Real Long Arms will only be added if that report exposes a verified pose path.</string>
+    <string name="recenter_flight">Recenter Flight Direction</string>
+    <string name="refresh_120">Refresh Rate: 120 Hz</string>
+    <string name="refresh_72">Refresh Rate: 72 Hz</string>
+    <string name="refresh_90">Refresh Rate: 90 Hz</string>
+    <string name="refresh_default">Refresh Rate: DEFAULT</string>
+    <string name="reset_input_mappings">Reset Input Mappings</string>
+    <string name="resolution_2048">Resolution: 2048</string>
+    <string name="resolution_2560">Resolution: 2560</string>
+    <string name="resolution_3072">Resolution: 3072</string>
+    <string name="resolution_default">Resolution: DEFAULT</string>
+    <string name="restore_tracking">Restore Head + Controllers</string>
+    <string name="run_pose_probe">Run Runtime/Pose Probe</string>
+    <string name="settings_tab">Settings</string>
+    <string name="status_separator">•</string>
+    <string name="tagline">QUEST RUNTIME CONTROL</string>
+    <string name="trace_a">Capture A Trace</string>
+    <string name="trace_b">Capture B Trace</string>
+    <string name="trace_connect_first">Input trace: connect ADB first</string>
+    <string name="trace_grip">Capture Right Grip Trace</string>
+    <string name="trace_idle">Input trace: not started</string>
+    <string name="trace_instructions">For each capture: release every control, wait for ARMED, then press and release the named control three times. RT is compared against Right Grip so Moonlit does not confuse them.</string>
+    <string name="trace_lt">Capture LT Trace</string>
+    <string name="trace_rt">Capture RT Trace</string>
+    <string name="tracking_tab">Tracking</string>
+    <string name="vertical_off">Up/Down [RT/LT]: OFF</string>
+    <string name="vertical_on">Up/Down [RT/LT]: ON</string>
+    <string name="wifi_disconnect">Disconnect Wi-Fi (5s)</string>
+    <string name="long_arms_off">Long Arms: OFF</string>
+    <string name="long_arms_on">Long Arms: ON</string>
+    <string name="long_arms_offset_label">Long Arms Offset: %s</string>
+</resources>

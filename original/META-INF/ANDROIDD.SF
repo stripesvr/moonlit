@@ -1,0 +1,65 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: fv8zpvhnzO8YbW8dbqidvvAuu8WcqT/0/PqqVhSvWpU=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: 38MXdbExY7eioheIvQGW3pGdR95Gvx/jguDJXl5B+JQ=
+
+Name: META-INF/com/android/build/gradle/app-metadata.properties
+SHA-256-Digest: tMpL0bvzS/ABhU8xReE0obMyu5/Qfaqwl1NfnqIjcb0=
+
+Name: META-INF/version-control-info.textproto
+SHA-256-Digest: bGPYrKSsmb5tpmtltqs82gWayRJtXwCM3VXJFk8mnb8=
+
+Name: classes.dex
+SHA-256-Digest: qft/Gq6QW1iGu8vDphou+sNWk+8CSYZhjk5npJYISCU=
+
+Name: res/drawable-nodpi/ic_launcher.png
+SHA-256-Digest: BEEdOCQSX57eyQxexLh9i4/MJrX2OZMKd5ZOajKkyl4=
+
+Name: res/drawable/button_outline.xml
+SHA-256-Digest: OSEgSLf4tEhgKmJUE7UYlyrqtgFkb/f/GuEI8XII/Fs=
+
+Name: res/drawable/button_outline_on.xml
+SHA-256-Digest: e6siJEn+q/chRDfBCWbk1bKKG0GWl1isGXXOdl9NBBQ=
+
+Name: res/drawable/ic_diagnostics.xml
+SHA-256-Digest: MoC2GAGYrP6s/j4u3DYJNo3I42KQW0dMVejwgNGv6u4=
+
+Name: res/drawable/ic_graphics.xml
+SHA-256-Digest: gSQ2aqC4A/ruqqffmYyBXwp+3XLVgT2CYUjmSulfxJ4=
+
+Name: res/drawable/ic_input_lab.xml
+SHA-256-Digest: aFezadVcsV+kzt9GwnVD2WhTamTrcFzjcnTiYy14lbM=
+
+Name: res/drawable/ic_locomotion.xml
+SHA-256-Digest: a1Iy24ajjozLD4OWX7iQQC1VXQ+87jk8JqCnVvdvhWU=
+
+Name: res/drawable/ic_movement.xml
+SHA-256-Digest: Ky4cgMveDT1ZBs5NjBcGjhxrXr/VqL12xOcfVBnDZ5c=
+
+Name: res/drawable/ic_settings.xml
+SHA-256-Digest: dDdS7vk1dXPI4pjsDwP34zb2ECcVfuRsA/fYktkyv3M=
+
+Name: res/drawable/ic_shooting_star.xml
+SHA-256-Digest: oZ7CA9AriDWsZmXVrc8PEc9/wmdGUBq8YBxsc+D0RUQ=
+
+Name: res/drawable/ic_stat_delta.xml
+SHA-256-Digest: nacpNh4bZ+056OqB4dfHXyv0SjNrdTaAPnmIfIrnBos=
+
+Name: res/drawable/ic_tracking.xml
+SHA-256-Digest: C30Xk3SIxa65N+Dn4yzXOh/PL2P9/nJ3AthluHr7sTM=
+
+Name: res/drawable/panel_background.xml
+SHA-256-Digest: ClSZeQ1grFh0Tqm0Y1dvrKRawVqBAUC6IHDaObLAlfA=
+
+Name: res/layout/activity_main.xml
+SHA-256-Digest: pNVv3qyI7ynzESGbtHVS3HVG0HnKVV70Xq+OixmZFLU=
+
+Name: res/xml/data_extraction_rules.xml
+SHA-256-Digest: /UPx30e1X3NLrwFspb6CM+lFhN6GuPpMOqbDrc3Cuxo=
+
+Name: resources.arsc
+SHA-256-Digest: 4r8i0FmvCuAWux5gdFQs9yluCCWr7k3RXyKZUUfxfAY=
+

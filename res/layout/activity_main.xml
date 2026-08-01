@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/home_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/panel_background" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_shooting_star" android:contentDescription="@string/app_name" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+                    <TextView android:textSize="31.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/DeltaText" />
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/moon_accent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tagline" android:letterSpacing="0.12" style="@style/DeltaText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/muted" android:id="@id/fps_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fps_initial" style="@style/DeltaText" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/muted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_separator" android:layout_marginHorizontal="10.0dip" style="@style/DeltaText" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/muted" android:id="@id/connection_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_connected" style="@style/DeltaText" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="14.0dip" android:layout_weight="1.0">
+            <ScrollView android:id="@id/home_page_one" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/connect_button" android:text="@string/connect" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_shooting_star" style="@style/DeltaButton" />
+                    <Button android:id="@id/wifi_disconnect_button" android:layout_marginTop="10.0dip" android:text="@string/wifi_disconnect" style="@style/DeltaButton" />
+                    <Button android:id="@id/movement_tab_button" android:layout_marginTop="10.0dip" android:text="@string/movement_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_movement" style="@style/DeltaButton" />
+                    <Button android:id="@id/locomotion_tab_button" android:layout_marginTop="10.0dip" android:text="@string/locomotion_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_locomotion" style="@style/DeltaButton" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/home_page_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/graphics_tab_button" android:text="@string/graphics_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_graphics" style="@style/DeltaButton" />
+                    <Button android:id="@id/tracking_tab_button" android:layout_marginTop="10.0dip" android:text="@string/tracking_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_tracking" style="@style/DeltaButton" />
+                    <Button android:id="@id/input_lab_tab_button" android:layout_marginTop="10.0dip" android:text="@string/input_lab_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_input_lab" style="@style/DeltaButton" />
+                    <Button android:id="@id/diagnostics_tab_button" android:layout_marginTop="10.0dip" android:text="@string/diagnostics_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_diagnostics" style="@style/DeltaButton" />
+                    <Button android:id="@id/settings_tab_button" android:layout_marginTop="10.0dip" android:text="@string/settings_tab" android:drawablePadding="12.0dip" android:drawableStart="@drawable/ic_settings" style="@style/DeltaButton" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:id="@id/home_back_button" android:visibility="invisible" android:layout_width="0.0dip" android:text="@string/back" android:layout_weight="1.0" style="@style/DeltaButton" />
+            <Button android:id="@id/home_next_button" android:layout_width="0.0dip" android:text="@string/next" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/DeltaButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/panel_background" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/section_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_movement" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movement_tab" android:layout_marginStart="11.0dip" style="@style/DeltaText" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="14.0dip" android:layout_weight="1.0">
+            <ScrollView android:id="@id/movement_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/fly_rt_button" android:text="@string/fly_rt_off" style="@style/DeltaButton" />
+                    <Button android:id="@id/vertical_button" android:layout_marginTop="10.0dip" android:text="@string/vertical_off" style="@style/DeltaButton" />
+                    <Button android:id="@id/fly_speed_button" android:layout_marginTop="10.0dip" android:text="@string/fly_speed_medium" style="@style/DeltaButton" />
+                    <Button android:id="@id/airstrike_button" android:layout_marginTop="10.0dip" android:text="@string/airstrike" style="@style/DeltaButton" />
+                    <Button android:id="@id/recenter_button" android:layout_marginTop="10.0dip" android:text="@string/recenter_flight" style="@style/DeltaButton" />
+                    <Button android:id="@id/max_performance_button" android:layout_marginTop="10.0dip" android:text="@string/max_performance_off" style="@style/DeltaButton" />
+                    <Button android:id="@id/max_predictions_button" android:layout_marginTop="10.0dip" android:text="@string/max_predictions_off" style="@style/DeltaButton" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/locomotion_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/car_button" android:text="@string/car_off" style="@style/DeltaButton" />
+                    <Button android:id="@id/car_speed_button" android:layout_marginTop="10.0dip" android:text="@string/car_speed_medium" style="@style/DeltaButton" />
+                    <Button android:id="@id/long_arms_button" android:layout_marginTop="10.0dip" android:text="@string/long_arms_off" style="@style/DeltaButton" />
+
+                    <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:background="@drawable/panel_background" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/car_note" style="@style/DeltaText" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/graphics_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/refresh_rate_button" android:text="@string/refresh_default" style="@style/DeltaButton" />
+                    <Button android:id="@id/resolution_button" android:layout_marginTop="10.0dip" android:text="@string/resolution_default" style="@style/DeltaButton" />
+                    <Button android:id="@id/foveation_button" android:layout_marginTop="10.0dip" android:text="@string/foveation_off" style="@style/DeltaButton" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/tracking_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/guardian_button" android:text="@string/guardian_off" style="@style/DeltaButton" />
+                    <Button android:id="@id/restore_tracking_button" android:layout_marginTop="10.0dip" android:text="@string/restore_tracking" style="@style/DeltaButton" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:background="@drawable/panel_background" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/controller_normal" style="@style/DeltaText" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/input_lab_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/moon_accent" android:id="@id/trace_status" android:background="@drawable/panel_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trace_idle" android:textIsSelectable="true" style="@style/DeltaText" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/muted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/trace_instructions" style="@style/DeltaText" />
+                    <Button android:id="@id/trace_rt_button" android:layout_marginTop="14.0dip" android:text="@string/trace_rt" style="@style/DeltaButton" />
+                    <Button android:id="@id/trace_grip_button" android:layout_marginTop="10.0dip" android:text="@string/trace_grip" style="@style/DeltaButton" />
+                    <Button android:id="@id/trace_lt_button" android:layout_marginTop="10.0dip" android:text="@string/trace_lt" style="@style/DeltaButton" />
+                    <Button android:id="@id/trace_a_button" android:layout_marginTop="10.0dip" android:text="@string/trace_a" style="@style/DeltaButton" />
+                    <Button android:id="@id/trace_b_button" android:layout_marginTop="10.0dip" android:text="@string/trace_b" style="@style/DeltaButton" />
+                    <Button android:id="@id/analyze_traces_button" android:layout_marginTop="14.0dip" android:text="@string/analyze_traces" style="@style/DeltaButton" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/muted" android:id="@id/mapping_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:textIsSelectable="true" style="@style/DeltaText" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/diagnostics_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/muted" android:id="@id/input_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/input_waiting" style="@style/DeltaText" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:id="@id/camera_vector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/camera_waiting" style="@style/DeltaText" />
+                    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/moon_accent" android:background="@drawable/panel_background" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/pose_pending" style="@style/DeltaText" />
+                    <Button android:id="@id/run_probe_button" android:layout_marginTop="14.0dip" android:text="@string/run_pose_probe" style="@style/DeltaButton" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/muted" android:id="@id/probe_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/probe_idle" android:textIsSelectable="true" style="@style/DeltaText" />
+                    <Button android:id="@id/cleanup_button" android:layout_marginTop="14.0dip" android:text="@string/cleanup_all" style="@style/DeltaButton" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/muted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/probe_note" style="@style/DeltaText" />
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@id/settings_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/animated_title_button" android:text="@string/animated_title_on" style="@style/DeltaButton" />
+                    <Button android:id="@id/reset_input_button" android:layout_marginTop="10.0dip" android:text="@string/reset_input_mappings" style="@style/DeltaButton" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/muted" android:background="@drawable/panel_background" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/about_moonlit" style="@style/DeltaText" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+        <Button android:id="@id/content_back_button" android:layout_marginTop="12.0dip" android:text="@string/back" style="@style/DeltaButton" />
+    </LinearLayout>
+</FrameLayout>

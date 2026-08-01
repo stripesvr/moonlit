@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ff030407</color>
+    <color name="connected_green">#ff4be08a</color>
+    <color name="moon_accent">#ff9cc4ff</color>
+    <color name="muted">#ff8e98a8</color>
+    <color name="panel">#ff0b0e14</color>
+    <color name="panel_pressed">#ff151b26</color>
+    <color name="white">#fff7f9fc</color>
+</resources>
